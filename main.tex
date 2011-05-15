@@ -1,0 +1,113 @@
+\documentclass[m]{vakthesis}
+
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian,ukrainian]{babel}
+
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{alltt}
+\usepackage{moreverb}
+\usepackage{setspace}
+\usepackage{algorithmic}
+\usepackage{algorithm}
+\usepackage{multirow}
+\usepackage{bigstrut}
+\usepackage{makecell}
+\usepackage[table]{xcolor}
+\usepackage{tabularx}
+
+
+\usepackage{url}
+\usepackage{array}
+\usepackage{booktabs}
+
+\usepackage[intlimits]{amsmath}
+\allowdisplaybreaks
+\usepackage{amsthm}
+\usepackage{amssymb}
+
+\usepackage{geometry}
+\geometry{hmargin={30mm,15mm},vmargin={26mm,26mm}}
+
+\usepackage[version=0.96]{pgf}
+\usepackage{tikz}
+\usetikzlibrary{arrows,shapes,shapes.arrows,shapes.misc,snakes,automata,backgrounds,petri,patterns,positioning,scopes,chains,matrix,decorations.pathmorphing,shadows}
+
+\def\argmin{\mathop{\rm arg\,min}}
+
+
+\begin{document}
+
+\tikzset{
+  terminal/.style={
+    % The shape:
+    rounded rectangle,
+    minimum size=6mm,
+    % The border:
+    very thick,
+    draw=green!50!black!50,         % 50% red and 50% black,
+                                  % and that mixed with 50% white
+    % The filling:
+    top color=white,              % a shading that is white at the top...
+    bottom color=green!50!black!20, % and something else at the bottom
+    % Font
+    font=\itshape,text centered
+  },
+  process/.style={
+    % The shape:
+    rectangle,
+    % The size:
+    minimum size=6mm,
+    % The rest
+    very thick,draw=black!50,
+    top color=white,bottom color=black!20,
+    font=\ttfamily,text centered
+  },
+  decision/.style={
+    % The shape:
+    diamond, 
+    minimum size=6mm,    
+    % The rest
+    very thick,draw=black!50,
+    top color=white,bottom color=black!20,
+    font=\ttfamily,text centered
+  },
+  data/.style={
+    % The shape:
+    trapezium,
+    trapezium left angle=70, 
+    trapezium right angle=110,    
+    minimum size=6mm,    
+    % The rest
+    very thick,draw=black!50,
+    top color=white,bottom color=black!20,
+    font=\ttfamily,text centered
+  },
+  line/.style={draw, very thick, color=black!50,rounded corners},
+  help-lines/.style={draw, very thin, color=black!50},
+  arrow/.style={draw, very thick, color=black!50, -latex',rounded corners},
+  helper-arrow/.style={draw, very thin, color=black, -latex'},
+  dashed-line/.style={draw, dashed, color=black},
+  point/.style={coordinate}
+}
+\floatname{algorithm}{Алгоритм} 
+\title{Методи кластеризації на великих масивах даних}
+\author{Волощук Орест Романович}
+\supervisor{Годич Олесь Васильович}
+           {кандидат фізико-математичних наук, доцент}
+\speciality{01.05.03}
+\udc{004.853+004.855.5}
+\institution{Львівський національний університет імені~Івана~Франка,}{Львів}
+\date{2011}
+
+
+\maketitle
+
+\setcounter{tocdepth}{2}
+\tableofcontents
+\nocite{*}
+
+\include{chapters/00-intro/intro}
+
+\end{document}
