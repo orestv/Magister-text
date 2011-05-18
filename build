@@ -1,1 +1,3 @@
-latex main.tex && bibtex main.aux && latex main.tex && pdflatex main.tex
+latex main.tex 
+bibtex main.aux 
+pdflatex main.tex
